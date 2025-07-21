@@ -1,8 +1,9 @@
 import { FinanceHeader } from "@/components/FinanceHeader";
 import { BalanceCard } from "@/components/BalanceCard";
-import { QuickActions } from "@/components/QuickActions";
-import { TransactionList } from "@/components/TransactionList";
+import { DynamicQuickActions } from "@/components/DynamicQuickActions";
+import { DynamicTransactionList } from "@/components/DynamicTransactionList";
 import { BottomNav } from "@/components/BottomNav";
+import { useEffect } from "react";
 
 const Index = () => {
   return (
@@ -14,8 +15,8 @@ const Index = () => {
           <BalanceCard />
         </div>
         
-        <QuickActions />
-        <TransactionList />
+        <DynamicQuickActions />
+        <DynamicTransactionList />
         
         {/* Bottom spacing for nav */}
         <div className="h-24"></div>
