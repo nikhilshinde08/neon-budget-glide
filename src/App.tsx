@@ -9,6 +9,7 @@ import Cards from "./pages/Cards";
 import Profile from "./pages/Profile";
 import DebtManagement from "./pages/DebtManagement";
 import SavingsPrediction from "./pages/SavingsPrediction";
+import AICategorization from "./pages/AICategorization";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/profile" element={<Profile />} />
           <Route path="/debt-management" element={<DebtManagement />} />
           <Route path="/savings-prediction" element={<SavingsPrediction />} />
+          <Route path="/ai-categorization" element={<AICategorization />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
